@@ -7,8 +7,10 @@ switch_success = 0
 doors = ['goat', 'goat', 'car']
 
 for x in range(1,100000):
-  #random.shuffle(doors)
   guess = random.randrange(3)
+  
+  # unnecessary step
+  # shown_goats doesn't really matter, but see below
   for index, door in enumerate(doors):
     if (door == 'goat' and index != guess):
       shown_goat = index
