@@ -30,8 +30,8 @@ for x in range(1,100000):
       if (index != guess and index != shown_goat):
         switched_guess = index
 
-    # [we could instead do doors[guess] != 'car']
-    # [see: http://stackoverflow.com/questions/1247863/monty-hall-problem/1247888#1247888]
+    # we could instead do doors[guess] != 'car'
+    # see: http://stackoverflow.com/questions/1247863/monty-hall-problem/1247888#1247888
     if (doors[switched_guess] == 'car'):
       switch_success = switch_success+1
 
